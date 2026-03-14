@@ -11,14 +11,6 @@ public class Time {
         this.date = LocalDate.now();
     }
 
-    public LocalDate getTime() {
-        return this.date;
-    }
-
-    public void setTime(LocalDate date) {
-        this.date = date;
-    }
-
     public String formatoLargo() {
         DateTimeFormatter formatoLargo = DateTimeFormatter.ofPattern("EEEE d 'de' MMMM 'de' yyyy", new Locale("es", "ES"));
         String largeFormat = this.date.format(formatoLargo);
